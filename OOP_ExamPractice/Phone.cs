@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
+// Phone Class for information of phones to be stored
 namespace OOP_ExamPractice
 {
-    class Phone
+    public class Phone
     {
-
         public string Name { get; set; }
         public decimal Price { get; set; }
         public string OperatingSystem { get; set; }
