@@ -19,6 +19,7 @@ namespace OOP_ExamPractice
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
+    ///  Background="{DynamicResource MaterialDesignPaper}"
     /// </summary>
     public partial class MainWindow : Window
     {
