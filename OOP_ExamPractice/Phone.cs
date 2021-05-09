@@ -17,6 +17,8 @@ namespace OOP_ExamPractice
         public string OS_Image { get; set; }
         public string Phone_Image { get; set; }
 
+        public Phone() { } // Empty Constructor
+
         public Phone(string name, decimal price, string os, string osImage = "", string phoneImage = "")
         {
             Name = name;
