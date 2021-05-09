@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace OOP_ExamPractice
 {
     public class Phone
     {
+        public int ID { get; set; } // forgot my Primary key so had issue for a few mins
         public string Name { get; set; }
         public decimal Price { get; set; }
         public string OperatingSystem { get; set; }
@@ -32,5 +34,11 @@ namespace OOP_ExamPractice
         {
             Price *= (decimal)(1 + increase);
         }
+    }
+
+    public class PhoneData : DbContext
+    {
+        public PhoneData() : base("PhoneInformation") { }// Gives the database a name
+        public DbSet<Phone> Phones { get; set; } // Creates a table for Phones
     }
 }
